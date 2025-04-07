@@ -51,9 +51,9 @@ extern "C"
         int lv;
     } ciphertext_t;
     extern const double pi;
-    extern  long secparam, d;
+    extern long secparam, d;
     /* denote d in fx */
-    extern  double dvn;
+    extern double dvn;
     /* standard deviation of Guassian distribution*/
     extern fmpz_t bound, t;
     extern fmpz_poly_t fx;
@@ -61,19 +61,19 @@ extern "C"
     /* for R = Z[x]/(x^d + 1); fx = x^d + 1 */
     extern long chrnd;
 
-    void set_mspace(long vt);                                                                    //
-    long get_mspace();                                                                           //
-    void bgv_set_d(long td);                                                                     //
-    long bgv_get_d();                                                                            //
-    void bgv_set_secparam(long sp);                                                              //
-    long bgv_get_secparam();                                                                     //
-    void bgv_set_dvn(double tdvn);                                                               //
-    double bgv_get_dvn();                                                                        //
-    void bgv_set_bound(int vb);                                                                  //
-    void bgv_vars_init();                                                                        //
-    void bgv_vars_clear();                                                                       //
-    void bgv_set_level(int l);                                                                   //
-    int bgv_get_level();                                                                         //
+    void set_mspace(long vt);       //
+    long get_mspace();              //
+    void bgv_set_d(long td);        //
+    long bgv_get_d();               //
+    void bgv_set_secparam(long sp); //
+    long bgv_get_secparam();        //
+    void bgv_set_dvn(double tdvn);  //
+    double bgv_get_dvn();           //
+    void bgv_set_bound(int vb);     //
+    void bgv_vars_init();           //
+    void bgv_vars_clear();          //
+    void bgv_set_level(int l);      //
+    int bgv_get_level();            //
 
 #ifdef __cplusplus
 }

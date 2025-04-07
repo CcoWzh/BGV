@@ -1,4 +1,5 @@
 #include "libbgv.h"
+#include "key.h"
 
 int main()
 {
